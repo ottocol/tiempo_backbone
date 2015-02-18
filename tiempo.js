@@ -1,5 +1,5 @@
 
-var URL_API = "http://api.openweathermap.org/data/2.5/weather?units=metric&lang=es&q=";
+var URL_API = "http://api.openweathermap.org/data/2.5/weather?units=metric&lang=es";
 var URL_BASE_ICONO = "http://openweathermap.org/img/w/"
 
 var DatosTiempo = Backbone.Model.extend({
