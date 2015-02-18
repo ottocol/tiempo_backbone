@@ -25,4 +25,14 @@ describe("Pruebas sobre la vista", function() {
        expect(vista.renderData).toHaveBeenCalled();
     });
 
+    it("El HTML generado debe ser correcto", function() {
+        vista = new TiempoWidget({model: new DatosTiempo()});
+        vista.render();
+        expect(vista.$el).toContainElement('#localidad');
+        expect(vista.$('#descripcion')).toBeEmpty();
+        expect(vista.$('#ver_tiempo')).toHaveValue('Ver tiempo');
+        expect(vista.$('#icono')).toHaveAttr("src","");
+
+    });
+
 });
